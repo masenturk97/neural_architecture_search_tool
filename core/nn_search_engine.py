@@ -1,4 +1,4 @@
-from src.genetic_algorithm import GeneticAlgorithm
+from core.genetic_algorithm import GeneticAlgorithm
 
 class NNSearchEngine():
     def __init__(self, params_dict):

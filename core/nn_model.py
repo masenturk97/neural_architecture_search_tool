@@ -4,7 +4,7 @@ from keras.callbacks import EarlyStopping
 from keras.models import Model as KerasModel
 from keras.layers import Dense, Input
 import keras
-import src.utils as utils
+import core.utils as utils
 import random
 
 class Layer():

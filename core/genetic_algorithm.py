@@ -1,5 +1,5 @@
-from src.nn_model import NNModel
-import src.utils as utils
+from core.nn_model import NNModel
+import core.utils as utils
 import threading
 import random
 

@@ -1,11 +1,12 @@
-from src.nn_search_engine import NNSearchEngine
+from core.nn_search_engine import NNSearchEngine
 
 params_dict = {
-    "dataset": "sample_datasets/sample_dataset1.csv",
+    "dataset": "datasets/sample_binary_classification_dataset.csv",
     "populationSize": 4,
     "maxGenerationCount": 2,
-    "IsRegression": True
+    "taskType": 2
 }
+
 search_engine = NNSearchEngine(params_dict)
 
 for iteration_models in search_engine:
@@ -13,5 +14,4 @@ for iteration_models in search_engine:
     for model in iteration_models:
         print(model.toDict())
 
-print("Solution found.")
-print(search_engine.finalBestFoundModel().toDict())
+print(f"Best Solution: {search_engine.finalBestFoundModel().toDict()}")
